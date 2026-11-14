@@ -17,6 +17,5 @@ export const renameActor = (movie, index, newName) => { const copy = { ...movie 
 copy.cast = movie.cast.map((actor, i) => 
  i === index ? { ...actor, name: newName } : actor);
   
-
   return copy; 
 };
